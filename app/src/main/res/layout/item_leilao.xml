@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:layout_margin="8dp">
+
+    <ImageView
+        android:id="@+id/item_leilao_imagem"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:contentDescription="@string/imagem_do_leilao"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/img_indisponivel" />
+
+
+    <TextView
+        android:id="@+id/item_leilao_descricao"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:ellipsize="end"
+        android:lines="1"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@id/item_leilao_maior_lance"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/item_leilao_imagem"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Playstatio 4" />
+
+    <TextView
+        android:id="@+id/item_leilao_maior_lance"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ellipsize="end"
+        android:lines="1"
+        android:textColor="@android:color/holo_green_dark"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/item_leilao_descricao"
+        app:layout_constraintStart_toStartOf="@+id/item_leilao_descricao"
+        app:layout_constraintTop_toBottomOf="@+id/item_leilao_descricao"
+        tools:text="R$ 100,00" />
+
+</android.support.constraint.ConstraintLayout>
