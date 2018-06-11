@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Leilão</string>
+    <string name="maior_lance">Maior lance:</string>
+    <string name="menor_lance">Menor lance:</string>
+    <string name="maiores_lances">Maiores lances</string>
+    <string name="imagem_do_leilao">Imagem do leilão</string>
+</resources>
